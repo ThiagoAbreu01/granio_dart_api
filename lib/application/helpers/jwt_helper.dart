@@ -6,7 +6,7 @@ class JwtHelper {
 
   static String generateJWT(int userID) {
     final claimSet = JwtClaim(
-      issuer: 'construdesk',
+      issuer: 'granio',
       subject: userID.toString(),
       expiry: DateTime.now().add(const Duration(days: 1)),
       notBefore: DateTime.now(),
